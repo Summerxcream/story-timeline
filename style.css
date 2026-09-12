@@ -380,7 +380,7 @@ button{font:inherit}
 .reveal.show{opacity:1;transform:none}
 
 /* =========================
-   RESPONSIVE
+   RESPONSIVE — CLEAN VERSION
    ========================= */
 @media (max-width: 760px){
 
@@ -420,35 +420,43 @@ button{font:inherit}
     padding:25px 21px;
   }
 
-  /* HERO COLLAGE */
+  /* HERO COLLAGE — tablet / small screens */
   .hero-collage{
-    height:330px;
+    height:340px;
     overflow:visible;
   }
 
   .mini-journal{
-    width:210px;
-    height:270px;
+    width:215px;
+    height:275px;
     top:18px;
+    left:50%;
+    right:auto;
+    transform:translateX(-50%) rotate(-2deg);
     z-index:5;
   }
 
   .polaroid{
-    width:112px;
+    width:118px;
     z-index:4;
   }
 
+  /* Anchor both photos from the CENTER, not the viewport edges.
+     This keeps the collage balanced across different phone widths. */
   .left-polaroid{
-    left:4px;
-    top:130px;
-    transform:rotate(-8deg);
+    left:50%;
+    right:auto;
+    top:132px;
+    bottom:auto;
+    transform:translateX(-188px) rotate(-8deg);
   }
 
   .right-polaroid{
-    right:4px;
-    top:138px;
+    left:50%;
+    right:auto;
+    top:142px;
     bottom:auto;
-    transform:rotate(8deg);
+    transform:translateX(70px) rotate(8deg);
   }
 
   /* dekorasi hero */
@@ -480,22 +488,23 @@ button{font:inherit}
   }
 
   /* HERO COVER MOBILE
-     Satu-satunya aturan cover untuk layar kecil.
-     Foto berada DI BELAKANG buku dan digeser ke sisi luar,
-     jadi tetap kelihatan tanpa menutup tulisan di cover. */
+     One definitive rule only — no stacked overrides. */
   .hero-collage{
     width:100%;
-    height:335px;
+    height:340px;
     position:relative;
     overflow:visible;
+    margin:0 auto 18px;
   }
 
+  /* BOOK — always centered and on top */
   .hero-collage .mini-journal{
     width:195px;
     height:255px;
     top:24px;
     left:50%;
     right:auto;
+    bottom:auto;
     transform:translateX(-50%) rotate(-2deg);
     z-index:5;
   }
@@ -509,28 +518,30 @@ button{font:inherit}
     font-size:2.55rem;
   }
 
+  /* PHOTOS — visible from both sides, but stay BEHIND the book.
+     Positions are based on the collage center so they don't drift. */
   .hero-collage .polaroid{
-    width:106px;
+    width:116px;
     z-index:4;
   }
 
   .hero-collage .left-polaroid{
-    left:-6px;
+    left:50%;
     right:auto;
-    top:142px;
+    top:132px;
     bottom:auto;
-    transform:rotate(-9deg);
+    transform:translateX(-176px) rotate(-9deg);
   }
 
   .hero-collage .right-polaroid{
-    right:-6px;
-    left:auto;
-    top:150px;
+    left:50%;
+    right:auto;
+    top:142px;
     bottom:auto;
-    transform:rotate(9deg);
+    transform:translateX(60px) rotate(9deg);
   }
 
-  /* LOVE KIRI — jangan nimpa title */
+  /* LOVE KIRI — jauh dari title */
   .s1{
     left:14px;
     top:7%;
