@@ -608,7 +608,7 @@ button{font:inherit}
 
 }
 
-/* ===== FORCE FIX COVER MOBILE ===== */
+/* ===== COVER MOBILE BALANCED ===== */
 @media screen and (max-width: 480px){
 
   .hero-collage{
@@ -617,43 +617,48 @@ button{font:inherit}
     position: relative !important;
   }
 
-  /* buku tengah */
+  /* buku utama tetap jadi fokus */
   .hero-collage .mini-journal{
-    width: 180px !important;
-    height: 240px !important;
-    top: 30px !important;
+    width: 205px !important;
+    height: 270px !important;
+
+    top: 24px !important;
     left: 50% !important;
     right: auto !important;
+
     transform: translateX(-50%) rotate(-2deg) !important;
+
+    z-index: 5 !important;
+  }
+
+  /* foto kiri cuma ngintip */
+  .hero-collage .left-polaroid{
+    width: 105px !important;
+
+    left: 18px !important;
+    right: auto !important;
+
+    top: 118px !important;
+    bottom: auto !important;
+
+    transform: rotate(-9deg) !important;
+
     z-index: 4 !important;
   }
 
-  /* FOTO KIRI */
-  .hero-collage .left-polaroid{
-    width: 120px !important;
-    left: 0 !important;
-    right: auto !important;
-    top: 95px !important;
-    bottom: auto !important;
-
-    transform: rotate(-10deg) !important;
-
-    /* sengaja di DEPAN buku sedikit */
-    z-index: 6 !important;
-  }
-
-  /* FOTO KANAN */
+  /* foto kanan cuma ngintip */
   .hero-collage .right-polaroid{
-    width: 120px !important;
-    right: 0 !important;
+    width: 105px !important;
+
+    right: 18px !important;
     left: auto !important;
-    top: 115px !important;
+
+    top: 125px !important;
     bottom: auto !important;
 
-    transform: rotate(10deg) !important;
+    transform: rotate(9deg) !important;
 
-    /* sengaja di DEPAN buku sedikit */
-    z-index: 6 !important;
+    z-index: 4 !important;
   }
 
 }
