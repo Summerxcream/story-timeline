@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff9f4">
+  <title>Our Story Timeline ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="hero-sticker s1">♡</div>
+    <div class="hero-sticker s2">✿</div>
+    <div class="hero-sticker s3">✦</div>
+
+    <div class="hero-inner">
+      <p class="tiny-label">OUR LITTLE JOURNEY</p>
+      <h1>our story<br><span>timeline</span></h1>
+      <p class="hero-note">from the first “hi” to now ♡</p>
+
+      <div class="hero-collage">
+        <figure class="polaroid left-polaroid">
+          <img src="assets/photos/cover-left.jpg" alt="Memory">
+        </figure>
+
+        <div class="mini-journal">
+          <span>vol. 01</span>
+          <strong>US</strong>
+          <small>still in progress</small>
+          <b>♡</b>
+        </div>
+
+        <figure class="polaroid right-polaroid">
+          <img src="assets/photos/cover-right.jpg" alt="Memory">
+        </figure>
+      </div>
+
+      <button id="startStory" class="start-btn">start the timeline ↓</button>
+    </div>
+  </header>
+
+  <main class="timeline-wrap" id="story">
+    <section class="timeline-intro reveal">
+      <p class="tiny-label">HOW IT STARTED</p>
+      <h2>beberapa momen yang pengen disimpen.</h2>
+      <p>Urut dari awal sampai sekarang. Nanti kalau ada cerita baru, tinggal nambah lagi.</p>
+    </section>
+
+    <div class="timeline">
+      <div class="timeline-path"></div>
+      <div class="timeline-progress" id="timelineProgress"></div>
+
+      <article class="milestone left reveal" id="m1">
+        <div class="dot"><span>01</span></div>
+        <div class="date-tag">FEB 2026</div>
+        <div class="card yellow-card">
+          <p class="script">first hello</p>
+          <h3>awal kenal</h3>
+          <p>Awalnya cuma ngobrol biasa. Terus lama-lama jadi makin sering.</p>
+          <figure class="taped-photo">
+            <span class="tape yellow-tape"></span>
+            <img src="assets/photos/photo-1.jpg" alt="First hello">
+            <figcaption>this one started it all</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="milestone right reveal" id="m2">
+        <div class="dot"><span>02</span></div>
+        <div class="date-tag">MAR 2026</div>
+        <div class="card pink-card">
+          <p class="script">first favorite memory</p>
+          <h3>mulai punya cerita sendiri</h3>
+          <p>Momen kecil yang entah kenapa sampai sekarang masih gampang keinget.</p>
+          <div class="double-photo">
+            <figure><img src="assets/photos/photo-2.jpg" alt="Memory"></figure>
+            <figure><img src="assets/photos/photo-3.jpg" alt="Memory"></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="milestone left reveal" id="m3">
+        <div class="dot"><span>03</span></div>
+        <div class="date-tag">APR 2026</div>
+        <div class="card blue-card">
+          <p class="script">the funniest day</p>
+          <h3>yang masih lucu kalau diinget</h3>
+          <p>Ada aja kejadian random yang sebenarnya ga penting, tapi justru itu yang paling seru.</p>
+          <div class="quote-note">“ga penting ceritanya apa, yang penting waktu itu seru banget.”</div>
+        </div>
+      </article>
+
+      <article class="milestone right reveal" id="m4">
+        <div class="dot"><span>04</span></div>
+        <div class="date-tag">MAY 2026</div>
+        <div class="card lilac-card">
+          <p class="script">a place i remember</p>
+          <h3>tempat yang jadi punya cerita</h3>
+          <p>Tempatnya mungkin biasa aja. Yang bikin beda karena pernah ada momen kita di sana.</p>
+          <figure class="wide-photo">
+            <img src="assets/photos/photo-4.jpg" alt="Favorite place">
+            <figcaption>filed under: good memories ♡</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="milestone left reveal" id="m5">
+        <div class="dot"><span>05</span></div>
+        <div class="date-tag">JUN 2026</div>
+        <div class="card peach-card">
+          <p class="script">special day</p>
+          <h3>yang ini wajib masuk timeline</h3>
+          <p>Kalau ada satu hari yang rasanya beda dari biasanya, taruh di sini.</p>
+          <figure class="film-photo">
+            <img src="assets/photos/photo-5.jpg" alt="Special day">
+            <span>REC ●</span>
+          </figure>
+        </div>
+      </article>
+
+      <article class="milestone right reveal" id="m6">
+        <div class="dot"><span>06</span></div>
+        <div class="date-tag">TODAY</div>
+        <div class="card mint-card final-card">
+          <p class="script">still in progress</p>
+          <h3>sejauh ini masih seru.</h3>
+          <p>Timeline-nya berhenti di sini dulu. Bukan karena ceritanya selesai, tapi karena next chapter belum kejadian.</p>
+          <figure class="taped-photo">
+            <span class="tape pink-tape"></span>
+            <img src="assets/photos/photo-6.jpg" alt="Today">
+            <figcaption>to be continued…</figcaption>
+          </figure>
+          <div class="future-pill">next chapter: ???</div>
+        </div>
+      </article>
+    </div>
+
+    <section class="ending reveal">
+      <p class="script">more stories soon ♡</p>
+      <h2>to be continued.</h2>
+      <button id="backTop">back to the start ↑</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
