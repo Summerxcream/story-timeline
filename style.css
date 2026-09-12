@@ -607,3 +607,53 @@ button{font:inherit}
   }
 
 }
+
+/* ===== FORCE FIX COVER MOBILE ===== */
+@media screen and (max-width: 480px){
+
+  .hero-collage{
+    height: 330px !important;
+    width: 100% !important;
+    position: relative !important;
+  }
+
+  /* buku tengah */
+  .hero-collage .mini-journal{
+    width: 180px !important;
+    height: 240px !important;
+    top: 30px !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) rotate(-2deg) !important;
+    z-index: 4 !important;
+  }
+
+  /* FOTO KIRI */
+  .hero-collage .left-polaroid{
+    width: 120px !important;
+    left: 0 !important;
+    right: auto !important;
+    top: 95px !important;
+    bottom: auto !important;
+
+    transform: rotate(-10deg) !important;
+
+    /* sengaja di DEPAN buku sedikit */
+    z-index: 6 !important;
+  }
+
+  /* FOTO KANAN */
+  .hero-collage .right-polaroid{
+    width: 120px !important;
+    right: 0 !important;
+    left: auto !important;
+    top: 115px !important;
+    bottom: auto !important;
+
+    transform: rotate(10deg) !important;
+
+    /* sengaja di DEPAN buku sedikit */
+    z-index: 6 !important;
+  }
+
+}
