@@ -379,7 +379,10 @@ button{font:inherit}
 }
 .reveal.show{opacity:1;transform:none}
 
-@media(max-width:760px){
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 760px){
 
   /* TIMELINE MOBILE */
   .timeline-path,
@@ -417,42 +420,38 @@ button{font:inherit}
     padding:25px 21px;
   }
 
-
-  /* =========================
-     HERO COLLAGE FIX
-     ========================= */
-
+  /* HERO COLLAGE */
   .hero-collage{
     height:330px;
+    overflow:visible;
   }
 
   .mini-journal{
     width:210px;
     height:270px;
     top:18px;
-    z-index:4;
+    z-index:5;
   }
 
   .polaroid{
     width:112px;
-    z-index:3;
+    z-index:4;
   }
 
   .left-polaroid{
-    left:28px;
-    top:105px;
+    left:4px;
+    top:130px;
     transform:rotate(-8deg);
   }
 
   .right-polaroid{
-    right:28px;
-    top:118px;
+    right:4px;
+    top:138px;
     bottom:auto;
-    transform:rotate(7deg);
+    transform:rotate(8deg);
   }
 
-
-  /* dekorasi hero biar nggak ganggu title */
+  /* dekorasi hero */
   .s1{
     left:14px;
     top:8%;
@@ -473,72 +472,83 @@ button{font:inherit}
   }
 }
 
-
-@media(max-width:480px){
+@media (max-width: 480px){
 
   /* TITLE */
   .hero h1{
     font-size:clamp(3.8rem,20vw,5.5rem);
   }
 
-
-  /* =========================
-     HERO COVER MOBILE
-     ========================= */
-
+  /* HERO COVER MOBILE
+     Satu-satunya aturan cover untuk layar kecil.
+     Foto berada DI BELAKANG buku dan digeser ke sisi luar,
+     jadi tetap kelihatan tanpa menutup tulisan di cover. */
   .hero-collage{
     width:100%;
-    height:320px;
+    height:335px;
+    position:relative;
+    overflow:visible;
   }
 
-  .mini-journal{
-    width:205px;
-    height:265px;
-    top:18px;
+  .hero-collage .mini-journal{
+    width:195px;
+    height:255px;
+    top:24px;
+    left:50%;
+    right:auto;
+    transform:translateX(-50%) rotate(-2deg);
+    z-index:5;
+  }
+
+  .mini-journal strong{
+    font-size:3.35rem;
+  }
+
+  .mini-journal b{
+    margin-top:10px;
+    font-size:2.55rem;
+  }
+
+  .hero-collage .polaroid{
+    width:106px;
     z-index:4;
   }
 
-  .polaroid{
-    width:108px;
-    z-index:3;
-  }
-
-  .left-polaroid{
-    left:8px;
-    top:110px;
-    transform:rotate(-8deg);
-  }
-
-  .right-polaroid{
-    right:8px;
-    top:122px;
+  .hero-collage .left-polaroid{
+    left:-6px;
+    right:auto;
+    top:142px;
     bottom:auto;
-    transform:rotate(7deg);
+    transform:rotate(-9deg);
   }
 
+  .hero-collage .right-polaroid{
+    right:-6px;
+    left:auto;
+    top:150px;
+    bottom:auto;
+    transform:rotate(9deg);
+  }
 
-  /* LOVE KIRI — jangan nimpa "our story" */
+  /* LOVE KIRI — jangan nimpa title */
   .s1{
-    left:16px;
-    top:6%;
+    left:14px;
+    top:7%;
     font-size:2.8rem;
     transform:rotate(-12deg);
   }
 
-  /* bunga kanan */
   .s2{
-    right:12px;
+    right:10px;
     top:16%;
     font-size:2.2rem;
   }
 
-  /* bintang bawah */
   .s3{
     right:9%;
     bottom:12%;
     font-size:2rem;
   }
-
 
   /* TIMELINE */
   .milestone{
@@ -562,98 +572,4 @@ button{font:inherit}
   .double-photo{
     gap:8px;
   }
-}
-
-@media (max-width: 480px){
-
-  .hero-collage{
-    height: 310px;
-  }
-
-  /* journal diperkecil */
-  .mini-journal{
-    width: 185px;
-    height: 245px;
-    top: 24px;
-    z-index: 4;
-  }
-
-  .mini-journal strong{
-    font-size: 3.3rem;
-  }
-
-  .mini-journal b{
-    font-size: 2.5rem;
-    margin-top: 8px;
-  }
-
-  /* dua foto dibuat lebih kelihatan */
-  .polaroid{
-    width: 112px;
-    z-index: 3;
-  }
-
-  .left-polaroid{
-    left: 4px;
-    top: 100px;
-    transform: rotate(-8deg);
-  }
-
-  .right-polaroid{
-    right: 4px;
-    top: 112px;
-    bottom: auto;
-    transform: rotate(8deg);
-  }
-
-}
-
-/* ===== FINAL MOBILE COVER ===== */
-@media screen and (max-width: 480px){
-
-  .hero-collage{
-    width: 100% !important;
-    height: 330px !important;
-    position: relative !important;
-  }
-
-  /* BOOK */
-  .hero-collage .mini-journal{
-    width: 195px !important;
-    height: 260px !important;
-
-    top: 25px !important;
-    left: 50% !important;
-    right: auto !important;
-
-    transform: translateX(-50%) rotate(-2deg) !important;
-    z-index: 5 !important;
-  }
-
-  /* LEFT PHOTO */
-  .hero-collage .left-polaroid{
-    width: 108px !important;
-
-    left: 0 !important;
-    right: auto !important;
-    top: 125px !important;
-    bottom: auto !important;
-
-    transform: rotate(-9deg) !important;
-    z-index: 6 !important;
-  }
-
-  /* RIGHT PHOTO */
-  .hero-collage .right-polaroid{
-    width: 108px !important;
-
-    right: 0 !important;
-    left: auto !important;
-    top: 135px !important;
-    bottom: auto !important;
-
-    transform: rotate(9deg) !important;
-    z-index: 6 !important;
-  }
-
 }
