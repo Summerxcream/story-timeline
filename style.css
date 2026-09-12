@@ -563,3 +563,47 @@ button{font:inherit}
     gap:8px;
   }
 }
+
+@media (max-width: 480px){
+
+  .hero-collage{
+    height: 310px;
+  }
+
+  /* journal diperkecil */
+  .mini-journal{
+    width: 185px;
+    height: 245px;
+    top: 24px;
+    z-index: 4;
+  }
+
+  .mini-journal strong{
+    font-size: 3.3rem;
+  }
+
+  .mini-journal b{
+    font-size: 2.5rem;
+    margin-top: 8px;
+  }
+
+  /* dua foto dibuat lebih kelihatan */
+  .polaroid{
+    width: 112px;
+    z-index: 3;
+  }
+
+  .left-polaroid{
+    left: 4px;
+    top: 100px;
+    transform: rotate(-8deg);
+  }
+
+  .right-polaroid{
+    right: 4px;
+    top: 112px;
+    bottom: auto;
+    transform: rotate(8deg);
+  }
+
+}
