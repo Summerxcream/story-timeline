@@ -380,44 +380,186 @@ button{font:inherit}
 .reveal.show{opacity:1;transform:none}
 
 @media(max-width:760px){
-  .timeline-path,.timeline-progress{
+
+  /* TIMELINE MOBILE */
+  .timeline-path,
+  .timeline-progress{
     left:24px;
   }
+
   .milestone{
     display:block;
     min-height:0;
     padding-left:62px;
     margin-bottom:65px;
   }
-  .left .card,.right .card{
+
+  .left .card,
+  .right .card{
     margin:0;
   }
+
   .dot{
     left:24px;
     top:40px;
     width:48px;
     height:48px;
   }
+
   .date-tag{
     left:24px;
     top:76px;
     transform:translateX(-50%);
     font-size:.5rem;
   }
-  .card{padding:25px 21px}
-  .hero-collage{height:340px}
-  .mini-journal{width:230px;height:290px}
-  .polaroid{width:118px}
+
+  .card{
+    padding:25px 21px;
+  }
+
+
+  /* =========================
+     HERO COLLAGE FIX
+     ========================= */
+
+  .hero-collage{
+    height:330px;
+  }
+
+  .mini-journal{
+    width:210px;
+    height:270px;
+    top:18px;
+    z-index:4;
+  }
+
+  .polaroid{
+    width:112px;
+    z-index:3;
+  }
+
+  .left-polaroid{
+    left:28px;
+    top:105px;
+    transform:rotate(-8deg);
+  }
+
+  .right-polaroid{
+    right:28px;
+    top:118px;
+    bottom:auto;
+    transform:rotate(7deg);
+  }
+
+
+  /* dekorasi hero biar nggak ganggu title */
+  .s1{
+    left:14px;
+    top:8%;
+    font-size:3.2rem;
+    transform:rotate(-12deg);
+  }
+
+  .s2{
+    right:5%;
+    top:17%;
+    font-size:2.4rem;
+  }
+
+  .s3{
+    right:8%;
+    bottom:13%;
+    font-size:2.2rem;
+  }
 }
+
+
 @media(max-width:480px){
-  .hero h1{font-size:clamp(3.8rem,20vw,5.5rem)}
-  .hero-collage{width:100%;height:325px}
-  .mini-journal{width:205px;height:270px}
-  .left-polaroid{left:-2px;top:82px}
-  .right-polaroid{right:-2px;bottom:34px}
-  .milestone{padding-left:54px}
-  .timeline-path,.timeline-progress,.dot{left:20px}
-  .date-tag{left:20px}
-  .card{padding:23px 17px}
-  .double-photo{gap:8px}
+
+  /* TITLE */
+  .hero h1{
+    font-size:clamp(3.8rem,20vw,5.5rem);
+  }
+
+
+  /* =========================
+     HERO COVER MOBILE
+     ========================= */
+
+  .hero-collage{
+    width:100%;
+    height:320px;
+  }
+
+  .mini-journal{
+    width:205px;
+    height:265px;
+    top:18px;
+    z-index:4;
+  }
+
+  .polaroid{
+    width:108px;
+    z-index:3;
+  }
+
+  .left-polaroid{
+    left:8px;
+    top:110px;
+    transform:rotate(-8deg);
+  }
+
+  .right-polaroid{
+    right:8px;
+    top:122px;
+    bottom:auto;
+    transform:rotate(7deg);
+  }
+
+
+  /* LOVE KIRI — jangan nimpa "our story" */
+  .s1{
+    left:16px;
+    top:6%;
+    font-size:2.8rem;
+    transform:rotate(-12deg);
+  }
+
+  /* bunga kanan */
+  .s2{
+    right:12px;
+    top:16%;
+    font-size:2.2rem;
+  }
+
+  /* bintang bawah */
+  .s3{
+    right:9%;
+    bottom:12%;
+    font-size:2rem;
+  }
+
+
+  /* TIMELINE */
+  .milestone{
+    padding-left:54px;
+  }
+
+  .timeline-path,
+  .timeline-progress,
+  .dot{
+    left:20px;
+  }
+
+  .date-tag{
+    left:20px;
+  }
+
+  .card{
+    padding:23px 17px;
+  }
+
+  .double-photo{
+    gap:8px;
+  }
 }
